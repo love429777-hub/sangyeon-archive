@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DigitalCatalogProject",
+  "type": "object",
+  "required": [
+    "id",
+    "index",
+    "title",
+    "titleEn",
+    "subtitle",
+    "year",
+    "category",
+    "period",
+    "role",
+    "thumbnail",
+    "summary",
+    "specs",
+    "process",
+    "gallery"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "index": { "type": "string" },
+    "title": { "type": "string" },
+    "titleEn": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "year": { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Product Design",
+        "Mechanism & Engineering",
+        "Interaction & UX",
+        "Sustainable & Concept"
+      ]
+    },
+    "period": { "type": "string" },
+    "role": { "type": "string" },
+    "awards": { "type": "string" },
+    "featured": { "type": "boolean" },
+    "thumbnail": { "type": "string" },
+    "summary": { "type": "string" },
+    "specs": {
+      "type": "object",
+      "required": ["dimensions", "materials", "tools"],
+      "properties": {
+        "dimensions": { "type": "string" },
+        "materials": { "type": "string" },
+        "tools": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "mechanisms": { "type": "string" }
+      }
+    },
+    "process": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["phase", "description"],
+        "properties": {
+          "phase": { "type": "string" },
+          "description": { "type": "string" },
+          "image": { "type": "string" }
+        }
+      }
+    },
+    "gallery": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "caption"],
+        "properties": {
+          "url": { "type": "string" },
+          "caption": { "type": "string" },
+          "type": { "type": "string", "enum": ["render", "cad", "prototype", "mechanism", "final"] }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "video": { "type": "string" },
+        "github": { "type": "string" },
+        "cad": { "type": "string" },
+        "demo": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "정상연",
+  "nameEn": "Sangyeon Jung",
+  "department": "디자인공학과",
+  "departmentEn": "Department of Design Engineering",
+  "title": "Design Engineer & Physical Interaction Researcher",
+  "tagline": "조형적 심미성과 기구역학적 정밀함의 교차점을 탐구합니다.",
+  "bio": "디자인공학을 전공하며 단순한 스타일링을 넘어, 실제 작동 가능한 메커니즘과 사용자의 감각적 상호작용을 통합한 제품을 만듭니다. 기구설계, 3D 파라메트릭 모델링, CMF 디렉팅, 프로토타이핑을 아우르며 엔지니어링의 신뢰성과 디자인의 감성을 결합하는 작업을 지속하고 있습니다.",
+  "email": "sangyeon.jung@example.com",
+  "location": "Seoul, Republic of Korea",
+  "socials": {
+    "github": "https://github.com",
+    "behance": "https://behance.net",
+    "linkedin": "https://linkedin.com",
+    "instagram": "https://instagram.com"
+  },
+  "skills": {
+    "Engineering & CAD": ["SolidWorks (CSWP)", "Rhino 3D / Grasshopper", "Fusion 360", "FEA 해석", "공차 분석"],
+    "Prototyping & CMF": ["3D Printing (FDM / SLA)", "CNC 밀링 & 선반", "실리콘 몰딩", "CMF 사양 기획", "목업 후가공"],
+    "Electronics & Coding": ["Arduino & ESP32", "Physical Computing", "React / Web Tech", "Python", "Sensors & Actuators"],
+    "Visual & Rendering": ["KeyShot", "Blender", "Adobe Illustrator & Photoshop", "Figma"]
+  },
+  "exhibitions": [
+    { "year": "2026", "title": "디자인공학과 졸업작품 전시회 (Graduation Exhibition)", "role": "Exhibitor & Archive Lead" },
+    { "year": "2025", "title": "KDM+ 코리아디자인멤버십 산학 연계 프로토타입 쇼케이스", "role": "Hardware Lead" },
+    { "year": "2024", "title": "Young Design Engineers Invitational", "role": "Selected Designer" }
+  ]
+}

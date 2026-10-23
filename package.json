@@ -1,0 +1,30 @@
+{
+  "name": "design-engineering-sangyeon-archive",
+  "private": true,
+  "version": "1.0.0",
+  "description": "디자인공학과 정상연 개인 아카이브 & 디지털 도록",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "harness:add": "node harness/add-project.mjs",
+    "harness:validate": "node harness/validate.mjs",
+    "harness:stats": "node harness/stats.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.88.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.4"
+  }
+}

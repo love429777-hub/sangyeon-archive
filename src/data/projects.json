@@ -1,0 +1,239 @@
+[
+  {
+    "id": "aero-fold",
+    "index": "01",
+    "title": "AERO-FOLD: 공기역학 기반 휴대용 모듈러 워크벤치",
+    "titleEn": "AERO-FOLD: Aerodynamic Portable Modular Workbench",
+    "subtitle": "경량화 트러스 구조와 4절 링크 폴딩 메커니즘을 융합한 현장용 설계 테이블",
+    "year": "2026",
+    "category": "Product Design",
+    "period": "2026.01 - 2026.06",
+    "role": "조형 디자인, 기구설계 및 하중 FEA 시뮬레이션 (개인 100%)",
+    "awards": "2026 차세대 디자인공학 우수작 선정",
+    "featured": true,
+    "thumbnail": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+    "summary": "야외 현장 및 메이커스페이스에서 즉각적인 하중 분산과 빠른 전개가 가능하도록 고안된 휴대용 워크벤치입니다. 항공기 프레임의 공기역학적 슬릿과 4절 링크 폴딩 구조를 접목하여 단 3초 만에 150kg의 수직 하중을 견디는 안정성을 달성했습니다.",
+    "specs": {
+      "dimensions": "펼침 시: 1100 x 600 x 780 mm / 접힘 시: 1100 x 140 x 180 mm",
+      "materials": "Extruded Aluminum 6061-T6 (Black Matte Anodized), Carbon Fiber Joint Plates, POM Bushing",
+      "tools": [
+        "SolidWorks",
+        "KeyShot 11",
+        "ANSYS Workbench (FEA)",
+        "Waterjet Cutting",
+        "CNC Milling"
+      ],
+      "mechanisms": "4-bar linkage over-center locking mechanism with magnetic self-retraction"
+    },
+    "process": [
+      {
+        "phase": "01. 문제 발굴 & 현장 관찰",
+        "description": "기존 휴대용 작업대의 유격 흔들림과 복잡한 조립 나사 구조로 인한 작업자의 손목 피로도 및 조립 지연 문제를 분석했습니다."
+      },
+      {
+        "phase": "02. 기구학적 시뮬레이션 & 경량화",
+        "description": "SolidWorks Motion을 통해 단일 동작으로 네 모서리가 동기화되어 펼쳐지는 오버센터 락 메커니즘을 설계하고, 위상 최적화(Topology Optimization)로 중량을 32% 절감했습니다."
+      },
+      {
+        "phase": "03. 1:1 기능 목업 및 하중 테스트",
+        "description": "알루미늄 6061 압출재를 가공하고 POM 부싱을 적용하여 마찰 계수를 최소화한 실물 프로토타입을 제작, 150kg 정적 하중 시험을 통과했습니다."
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+        "caption": "AERO-FOLD 전개 상태 외관 렌더링 (KeyShot)",
+        "type": "render"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80",
+        "caption": "SolidWorks 3D CAD 정밀 기구 분해도 (Exploded View)",
+        "type": "cad"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80",
+        "caption": "CNC 알루미늄 가공 프레임 및 기능 목업 조립 검증",
+        "type": "prototype"
+      }
+    ],
+    "links": {
+      "video": "https://youtube.com",
+      "github": "",
+      "cad": ""
+    }
+  },
+  {
+    "id": "kinetic-light",
+    "index": "02",
+    "title": "KINETIC LUX: 편심 캠 메커니즘 앰비언트 키네틱 조명",
+    "titleEn": "KINETIC LUX: Eccentric Cam Mechanism Ambient Lighting",
+    "subtitle": "기계적 운동의 정밀함과 감성적 빛의 확산을 결합한 인터랙티브 오브제",
+    "year": "2025",
+    "category": "Mechanism & Engineering",
+    "period": "2025.09 - 2025.12",
+    "role": "키네틱 기구 설계, 모터 제어 회로 및 CMF 마감 (개인 100%)",
+    "awards": "KDM+ 우수 하드웨어 프로젝트",
+    "featured": true,
+    "thumbnail": "https://images.unsplash.com/photo-1507499739999-097706ad8914?auto=format&fit=crop&w=1200&q=80",
+    "summary": "물리적 기구의 아날로그적 움직임이 주는 정서적 안정감을 탐구한 키네틱 조명입니다. 황동 편심 캠과 유성기어 감속 모터의 회전을 통해 12개의 반투명 블레이드가 파도치듯 호흡하며 빛의 산란 각도를 우아하게 제어합니다.",
+    "specs": {
+      "dimensions": "Ø 280 x H 340 mm",
+      "materials": "Machined Brass (Hairline Brushed), Frosted Polycarbonate, Cast Acrylic, N20 Micro Gearmotor",
+      "tools": [
+        "Rhino 3D",
+        "Grasshopper",
+        "KeyShot",
+        "Lathe & CNC",
+        "Arduino Micro",
+        "SLA 3D Printing"
+      ],
+      "mechanisms": "Eccentric Cam & Push-rod system with harmonic oscillating curve"
+    },
+    "process": [
+      {
+        "phase": "01. 운동 곡선 수식화",
+        "description": "Grasshopper 파라메트릭 설계를 활용해 캠의 회전 각도에 따른 블레이드 개폐 비율의 하모닉 사인 파형(Harmonic Sine Wave)을 도출했습니다."
+      },
+      {
+        "phase": "02. 저소음 기구부 설계",
+        "description": "기어 치합음 및 진동을 차단하기 위해 실리콘 댐퍼 마운트와 헬리컬 기어를 적용하고, 황동 부품의 정밀 공차(±0.02mm)를 설계했습니다."
+      },
+      {
+        "phase": "03. 인터랙션 회로 및 조도 튜닝",
+        "description": "근접 센서(ToF)로 사용자의 손짓 거리를 감지하여 모터 속도와 고연색성(CRI 95+) LED의 캘빈 온도를 동기화했습니다."
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1507499739999-097706ad8914?auto=format&fit=crop&w=1200&q=80",
+        "caption": "KINETIC LUX 조명 활성화 시 빛의 산란 렌더링",
+        "type": "render"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=1200&q=80",
+        "caption": "내부 편심 캠 및 기구 구동부 어셈블리 3D 모델링",
+        "type": "mechanism"
+      }
+    ],
+    "links": {
+      "video": "",
+      "github": "https://github.com",
+      "cad": ""
+    }
+  },
+  {
+    "id": "tangible-sound",
+    "index": "03",
+    "title": "TANGIBLE AUDIO: 햅틱 물리 인터페이스 믹서",
+    "titleEn": "TANGIBLE AUDIO: Haptic Physical Tangible Interface Mixer",
+    "subtitle": "소프트웨어 디지털 오디오의 손맛을 복원하는 모듈형 기계식 컨트롤러",
+    "year": "2025",
+    "category": "Interaction & UX",
+    "period": "2025.03 - 2025.07",
+    "role": "인체공학적 조형, 인서트 몰딩 실리콘 노브, 펌웨어 개발",
+    "awards": "",
+    "featured": true,
+    "thumbnail": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+    "summary": "화면 속 가상 노브와 슬라이더의 촉각적 단절을 해소하기 위한 피지컬 컴퓨팅 기반 오디오 믹서입니다. 자성 유체(Magnetic Detent)와 능동 햅틱 모터를 결합하여 사용자가 조작하는 음역대에 따라 노브의 저항감이 실시간으로 변합니다.",
+    "specs": {
+      "dimensions": "320 x 200 x 42 mm",
+      "materials": "Sandblasted Aluminum Unibody, Double-shot Silicone, Neodymium Magnets, Custom PCB",
+      "tools": [
+        "Fusion 360",
+        "KiCad (PCB Design)",
+        "SolidWorks",
+        "C++ / PlatformIO",
+        "Figma"
+      ],
+      "mechanisms": "Magnetic detent rotary encoder with programmable brushless force-feedback"
+    },
+    "process": [
+      {
+        "phase": "01. 손가락 파지 및 저항감 Fitts 법칙 분석",
+        "description": "사운드 엔지니어 15인의 노브 조작 각도, 마찰력, 토크 피드백 선호도를 측정하여 이상적인 다이얼 반경(28mm)과 널링(Knurling) 패턴을 도출했습니다."
+      },
+      {
+        "phase": "02. 커스텀 회로 및 모듈형 섀시",
+        "description": "각 채널을 자석식 포고핀(Pogo-pin)으로 핫스왑할 수 있는 알루미늄 유니바디 섀시를 설계하고 다층 PCB를 배치했습니다."
+      },
+      {
+        "phase": "03. MIDI/HID 프로토콜 및 GUI 연동",
+        "description": "지연 시간 2ms 미만의 커스텀 USB MIDI 펌웨어와 Web MIDI API 기반 프리뷰 대시보드를 구축했습니다."
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+        "caption": "TANGIBLE AUDIO 컨트롤러 메인 스튜디오 샷",
+        "type": "render"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+        "caption": "자성 피드백 로터리 유닛 및 커스텀 PCB 설계",
+        "type": "prototype"
+      }
+    ],
+    "links": {
+      "video": "",
+      "github": "https://github.com",
+      "cad": ""
+    }
+  },
+  {
+    "id": "myco-pack",
+    "index": "04",
+    "title": "MYCO-CUSHION: 균사체 기반 친환경 정밀 전자기기 완충 패키징",
+    "titleEn": "MYCO-CUSHION: Mycelium-based Sustainable Precision Packaging",
+    "subtitle": "자연 분해 가능한 생체 균사체 복합재와 기하학적 벌집 완충 구조의 결합",
+    "year": "2024",
+    "category": "Sustainable & Concept",
+    "period": "2024.08 - 2024.12",
+    "role": "바이오 소재 배양 금형 설계, 드롭 시뮬레이션 (개인 100%)",
+    "awards": "그린 디자인 공모전 장려상",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80",
+    "summary": "플라스틱 스티로폼(EPS) 완충재를 100% 생분해성 버섯 균사체(Mycelium)와 농업 폐기물로 대체하기 위한 패키징 엔지니어링 프로젝트입니다. 기하학적 육각 리브 구조를 설계하여 1.2m 낙하 충격을 완벽히 흡수합니다.",
+    "specs": {
+      "dimensions": "360 x 240 x 90 mm",
+      "materials": "Agricultural Husk, Pleurotus Ostreatus Mycelium, Thermoformed PLA Mold",
+      "tools": [
+        "Rhino 3D",
+        "Grasshopper (Voronoi & Honeycomb)",
+        "Drop-test FEA Simulator",
+        "Vacuum Forming"
+      ],
+      "mechanisms": "Geometric progressive compression ribs with interlocking air pockets"
+    },
+    "process": [
+      {
+        "phase": "01. 균사체 배양 조건 및 인장 강도 실험",
+        "description": "짚, 톱밥, 커피 찌꺼기 배지 비율에 따른 균사체 밀도와 압축 탄성 계수를 시험하여 최적의 배합비를 선정했습니다."
+      },
+      {
+        "phase": "02. 진공성형 금형 및 벌집 완충 리브 설계",
+        "description": "탈형 각도 5도를 적용한 진공 성형용 PLA 금형을 3D 프린팅하고, 에어 포켓이 연동되는 허니컴 리브를 설계했습니다."
+      },
+      {
+        "phase": "03. 낙하 충격 계측 및 생분해 테스트",
+        "description": "가속도 센서를 내장한 덤벨로 낙하 충격 피크 G값을 측정하고, 퇴비화 환경에서 45일 내 완전 분해를 검증했습니다."
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80",
+        "caption": "MYCO-CUSHION 친환경 질감 및 외관 렌더링",
+        "type": "render"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+        "caption": "배양 금형 설계 및 내부 공기 순환 통로 설계",
+        "type": "cad"
+      }
+    ],
+    "links": {
+      "video": "",
+      "github": "",
+      "cad": ""
+    }
+  }
+]
