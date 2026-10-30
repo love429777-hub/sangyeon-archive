@@ -2,18 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight, Layers, Cpu, Wrench, Award, ExternalLink, Box, Sparkles } from 'lucide-react';
 
 export default function ProjectModal({ project, onClose }) {
-  if (!project) return null;
-
   const [activeImageIdx, setActiveImageIdx] = useState(0);
 
   // Close on Escape key
   useEffect(() => {
+    if (!project) return;
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [onClose]);
+  }, [project, onClose]);
+
+  if (!project) return null;
 
   const gallery = project.gallery && project.gallery.length > 0
     ? project.gallery

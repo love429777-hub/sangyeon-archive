@@ -1,6 +1,8 @@
 import React from 'react';
-import { Mail, Compass } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import profileData from '../data/profile.json';
+
+const currentYear = new Date().getFullYear();
 
 export default function Footer({ onOpenAbout, onOpenHarness }) {
   return (
@@ -37,7 +39,7 @@ export default function Footer({ onOpenAbout, onOpenHarness }) {
 
         <div className="border-t border-[#1a1d26] pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-gray-600">
           <div>
-            © {new Date().getFullYear()} Sangyeon Jung. All rights reserved.
+            © {currentYear} Sangyeon Jung. All rights reserved.
           </div>
           <div>
             Built with React, Tailwind CSS & Antigravity Agent Harness.

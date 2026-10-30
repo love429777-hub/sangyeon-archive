@@ -1,0 +1,70 @@
+{
+  "project": "Interactive-Landing-Page",
+  "version": "1.0.0",
+  "description": "Antigravity Multi-Agent Orchestration Pipeline for Modern Interactive Landing Page",
+  "harness": {
+    "pipeline": ["architect", "stylist", "developer", "qa"],
+    "parallelExecution": false,
+    "timeoutMs": 30000,
+    "stopOnError": true
+  },
+  "agents": [
+    {
+      "id": "architect",
+      "name": "Architect Agent",
+      "alias": "arch-agent",
+      "role": "UI/UX Structure Planner",
+      "promptPath": "./prompts/architect.md",
+      "outputs": ["ui-structure.schema.json", "component-tree.json"],
+      "responsibilities": [
+        "Define responsive UI/UX structure & layout hierarchy",
+        "Specify component tree (Hero, Feature/Roadmap, Media Area, Catalog)",
+        "Issue strict JSON schemas for components and data contracts"
+      ]
+    },
+    {
+      "id": "stylist",
+      "name": "Design System Agent",
+      "alias": "style-agent",
+      "role": "CMF & Tailwind Designer",
+      "promptPath": "./prompts/stylist.md",
+      "outputs": ["theme-tokens.json", "design-system-rules.md"],
+      "responsibilities": [
+        "Enforce Dark Slate (#0F172A) background & Neon Pink (#FF0055) / Cyan (#00F0FF) palette",
+        "Implement Glassmorphism (backdrop-blur) and Metallic Border Gradients",
+        "Configure Tailwind CSS classes, keyframe animations, and responsive tokens"
+      ]
+    },
+    {
+      "id": "developer",
+      "name": "Frontend Developer Agent",
+      "alias": "dev-agent",
+      "role": "React Component Engineer",
+      "promptPath": "./prompts/developer.md",
+      "outputs": ["src/components/*.jsx", "state-machine.json"],
+      "responsibilities": [
+        "Implement production-grade React components with Lucide icons",
+        "Build interactive sound/video visualization player with Web Audio API",
+        "Handle state transitions, interactive hover effects, and modal controllers"
+      ]
+    },
+    {
+      "id": "qa",
+      "name": "QA & Review Agent",
+      "alias": "qa-agent",
+      "role": "Code Review & Quality Assurance",
+      "promptPath": "./prompts/qa.md",
+      "outputs": ["qa-report.json", "validation-summary.md"],
+      "responsibilities": [
+        "Execute automated code linting (oxlint) and syntax checks",
+        "Verify responsive breakpoints (mobile, tablet, desktop) and WCAG contrast",
+        "Audit DOM accessibility, keyboard navigation, and harness data integrity"
+      ]
+    }
+  ],
+  "environment": {
+    "framework": "React 19 + Vite 8",
+    "styling": "Tailwind CSS v4",
+    "engine": "Antigravity CLI (agy)"
+  }
+}

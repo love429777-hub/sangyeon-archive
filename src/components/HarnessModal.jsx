@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Terminal, Cpu, CheckCircle2, Bot, Sparkles, FolderCode, Play } from 'lucide-react';
+import { X, Terminal, Bot, Sparkles, Play } from 'lucide-react';
 
 export default function HarnessModal({ isOpen, onClose }) {
   if (!isOpen) return null;

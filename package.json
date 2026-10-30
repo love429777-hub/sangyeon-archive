@@ -9,6 +9,7 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
+    "deploy": "wrangler pages deploy dist",
     "harness:add": "node harness/add-project.mjs",
     "harness:validate": "node harness/validate.mjs",
     "harness:stats": "node harness/stats.mjs"

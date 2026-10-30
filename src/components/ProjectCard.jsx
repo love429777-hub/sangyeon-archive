@@ -1,11 +1,11 @@
 import React from 'react';
-import { ArrowUpRight, Wrench, Layers, Award } from 'lucide-react';
+import { ArrowUpRight, Layers, Award, GraduationCap, Rocket } from 'lucide-react';
 
 export default function ProjectCard({ project, onSelect }) {
   return (
     <article 
       onClick={() => onSelect(project)}
-      className="group cursor-pointer rounded-2xl bg-[#13161f] border border-[#232835] hover:border-blue-500/60 overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1"
+      className="group cursor-pointer rounded-2xl bg-[#13161f]/90 backdrop-blur-md border border-[#232835] hover:border-blue-500/60 overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/15 hover:-translate-y-1.5"
     >
       {/* Visual Thumbnail Area */}
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#1a1d28]">
@@ -18,7 +18,7 @@ export default function ProjectCard({ project, onSelect }) {
         <div className="absolute inset-0 bg-gradient-to-t from-[#13161f] via-transparent to-transparent opacity-80" />
 
         {/* Catalog Numbering & Year Tag */}
-        <div className="absolute top-3 left-3 flex items-center gap-2">
+        <div className="absolute top-3 left-3 flex items-center gap-1.5">
           <span className="px-2.5 py-1 rounded bg-[#0b0c10]/80 backdrop-blur-md border border-white/10 text-white font-mono text-xs font-semibold">
             № {project.index}
           </span>
@@ -27,9 +27,17 @@ export default function ProjectCard({ project, onSelect }) {
           </span>
         </div>
 
+        {/* Era Tag (University vs Postgrad) */}
+        {project.eraLabel && (
+          <div className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded bg-[#0b0c10]/85 text-teal-300 font-mono text-[10px] backdrop-blur-md border border-teal-500/40">
+            {project.era === 'university' ? <GraduationCap size={12} /> : <Rocket size={12} />}
+            <span>{project.eraLabel}</span>
+          </div>
+        )}
+
         {/* Awards badge if any */}
         {project.awards && (
-          <div className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded bg-amber-500/90 text-black font-semibold text-[10px] tracking-tight backdrop-blur-md shadow-sm">
+          <div className="absolute bottom-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded bg-amber-500/90 text-black font-semibold text-[10px] tracking-tight backdrop-blur-md shadow-sm">
             <Award size={12} />
             <span>{project.awards}</span>
           </div>
@@ -43,8 +51,11 @@ export default function ProjectCard({ project, onSelect }) {
         </div>
 
         {/* Detail hover trigger */}
-        <div className="absolute bottom-3 right-3 w-8 h-8 rounded-full bg-blue-600/90 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:scale-105 duration-200 shadow-md">
-          <ArrowUpRight size={16} />
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-blue-950/30 backdrop-blur-[2px]">
+          <div className="px-4 py-2 rounded-xl bg-blue-600 text-white font-medium text-xs flex items-center gap-1.5 shadow-xl transform scale-95 group-hover:scale-100 transition-transform">
+            <span>스펙 및 도록 열람</span>
+            <ArrowUpRight size={14} />
+          </div>
         </div>
       </div>
 
