@@ -1,7 +1,7 @@
 import React from 'react';
-import { ArrowUpRight, Layers, Award, GraduationCap, Rocket } from 'lucide-react';
+import { ArrowUpRight, Layers, Award, GraduationCap, Rocket, Trash2 } from 'lucide-react';
 
-export default function ProjectCard({ project, onSelect }) {
+export default function ProjectCard({ project, onSelect, onDelete }) {
   return (
     <article 
       onClick={() => onSelect(project)}
@@ -27,13 +27,28 @@ export default function ProjectCard({ project, onSelect }) {
           </span>
         </div>
 
-        {/* Era Tag (University vs Postgrad) */}
-        {project.eraLabel && (
-          <div className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded bg-[#0b0c10]/85 text-teal-300 font-mono text-[10px] backdrop-blur-md border border-teal-500/40">
-            {project.era === 'university' ? <GraduationCap size={12} /> : <Rocket size={12} />}
-            <span>{project.eraLabel}</span>
-          </div>
-        )}
+        {/* Top Right Controls & Tags */}
+        <div className="absolute top-3 right-3 flex items-center gap-1.5 z-10">
+          {project.eraLabel && (
+            <div className="flex items-center gap-1 px-2.5 py-1 rounded bg-[#0b0c10]/85 text-teal-300 font-mono text-[10px] backdrop-blur-md border border-teal-500/40">
+              {project.era === 'university' ? <GraduationCap size={12} /> : <Rocket size={12} />}
+              <span>{project.eraLabel}</span>
+            </div>
+          )}
+          {onDelete && (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                onDelete(project.id);
+              }}
+              className="opacity-0 group-hover:opacity-100 p-1 rounded bg-black/80 hover:bg-red-950/90 text-gray-400 hover:text-red-300 transition-all border border-white/10"
+              title="아카이브에서 이 작품 삭제"
+            >
+              <Trash2 size={12} />
+            </button>
+          )}
+        </div>
 
         {/* Awards badge if any */}
         {project.awards && (

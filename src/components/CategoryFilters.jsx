@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, X, GraduationCap, Rocket, Sparkles } from 'lucide-react';
+import { Search, X, GraduationCap, Rocket, Sparkles, Plus } from 'lucide-react';
 import { sound } from '../utils/audio';
 
 export default function CategoryFilters({
@@ -11,7 +11,8 @@ export default function CategoryFilters({
   searchQuery,
   onSearchChange,
   filteredCount,
-  totalCount
+  totalCount,
+  onOpenAddProject
 }) {
   return (
     <div className="space-y-4 py-6 border-b border-[#1f242d]">
@@ -49,8 +50,22 @@ export default function CategoryFilters({
           </div>
         </div>
 
-        <div className="text-xs font-mono text-gray-400">
-          표시 중: <span className="text-blue-400 font-bold">{filteredCount}</span> / {totalCount}개
+        <div className="flex items-center gap-3">
+          <div className="text-xs font-mono text-gray-400">
+            표시 중: <span className="text-blue-400 font-bold">{filteredCount}</span> / {totalCount}개
+          </div>
+          {onOpenAddProject && (
+            <button
+              onClick={() => {
+                sound.playClick();
+                onOpenAddProject();
+              }}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-md shadow-blue-600/30 transition-all active:scale-95"
+            >
+              <Plus size={13} className="stroke-[2.5]" />
+              <span>새 작품 추가</span>
+            </button>
+          )}
         </div>
       </div>
 

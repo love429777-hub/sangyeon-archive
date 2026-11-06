@@ -21,7 +21,7 @@ let projects = [];
 if (fs.existsSync(dataFile)) {
   try {
     projects = JSON.parse(fs.readFileSync(dataFile, 'utf8'));
-  } catch (e) {
+  } catch {
     projects = [];
   }
 }

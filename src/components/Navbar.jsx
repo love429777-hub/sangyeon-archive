@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layers, LayoutGrid, Terminal, User, Volume2, VolumeX, Crosshair, Gamepad2 } from 'lucide-react';
+import { Layers, LayoutGrid, Terminal, User, Volume2, VolumeX, Crosshair, Gamepad2, Plus } from 'lucide-react';
 import { sound } from '../utils/audio';
 
 export default function Navbar({ 
@@ -7,7 +7,8 @@ export default function Navbar({
   setViewMode, 
   onOpenAbout, 
   onOpenHarness,
-  totalProjects,
+  onOpenAddProject,
+  _totalProjects,
   isCadInspector,
   setIsCadInspector,
   isSoundOn,
@@ -153,6 +154,19 @@ export default function Navbar({
           >
             <Terminal size={14} className="text-blue-400 group-hover:scale-110 transition-transform" />
             <span className="hidden sm:inline">하네스</span>
+          </button>
+
+          {/* Add Project Button */}
+          <button
+            onClick={() => {
+              sound.playClick();
+              onOpenAddProject();
+            }}
+            className="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold transition-all shadow-md shadow-emerald-950/40 border border-emerald-400/40 active:scale-95 cursor-pointer"
+            title="새 작업물(도록 항목) 추가"
+          >
+            <Plus size={14} className="stroke-[2.5]" />
+            <span>작업물 추가</span>
           </button>
 
           {/* About & Profile Button */}

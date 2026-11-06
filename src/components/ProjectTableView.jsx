@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Award, ExternalLink } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function ProjectTableView({ projects, onSelect }) {
   return (

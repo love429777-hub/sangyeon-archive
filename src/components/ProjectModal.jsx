@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight, Layers, Cpu, Wrench, Award, ExternalLink, Box, Sparkles } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Layers, Wrench, Award, ExternalLink, Sparkles, Trash2 } from 'lucide-react';
 
-export default function ProjectModal({ project, onClose }) {
+export default function ProjectModal({ project, onClose, onDelete }) {
   const [activeImageIdx, setActiveImageIdx] = useState(0);
 
   // Close on Escape key
@@ -44,12 +44,24 @@ export default function ProjectModal({ project, onClose }) {
               </span>
             )}
           </div>
-          <button
-            onClick={onClose}
-            className="p-1.5 rounded-lg text-gray-400 hover:text-white hover:bg-[#202535] transition-colors"
-          >
-            <X size={20} />
-          </button>
+          <div className="flex items-center gap-2">
+            {onDelete && (
+              <button
+                type="button"
+                onClick={() => onDelete(project.id)}
+                className="p-1.5 rounded-lg text-gray-500 hover:text-red-400 hover:bg-red-950/40 transition-colors"
+                title="아카이브에서 이 작품 삭제"
+              >
+                <Trash2 size={17} />
+              </button>
+            )}
+            <button
+              onClick={onClose}
+              className="p-1.5 rounded-lg text-gray-400 hover:text-white hover:bg-[#202535] transition-colors"
+            >
+              <X size={20} />
+            </button>
+          </div>
         </div>
 
         {/* Scrollable Modal Body */}

@@ -1,5 +1,58 @@
 [
   {
+    "id": "q",
+    "index": "05",
+    "title": "qq",
+    "titleEn": "qq",
+    "subtitle": "qq",
+    "year": "2026",
+    "category": "Product Design",
+    "era": "postgraduate",
+    "eraLabel": "졸업 후 / 독립 연구",
+    "period": "2026.03 - 2026.06",
+    "role": "기구설계 및 CMF 디렉팅 (개인 100%)q",
+    "awards": "qq",
+    "featured": true,
+    "thumbnail": "q",
+    "summary": "본 작품은 사용자의 조형적 경험과 기구역학적 안정성을 융합하여 설계된 디자인공학 프로젝트입니다.",
+    "specs": {
+      "dimensions": "240 x 160 x 85 mm",
+      "materials": "CNC Anodized Aluminum 6061, Injection Molded PC-ABS",
+      "tools": [
+        "SolidWorks",
+        "KeyShot",
+        "Rhino 3D"
+      ],
+      "mechanisms": "Precision Linkage Mechanism"
+    },
+    "process": [
+      {
+        "phase": "01. 문제 발굴 & 리서치",
+        "description": "해당 단계의 공학적 설계 및 검증 내용이 기술됩니다."
+      },
+      {
+        "phase": "02. 형상 & 기구설계",
+        "description": "해당 단계의 공학적 설계 및 검증 내용이 기술됩니다."
+      },
+      {
+        "phase": "03. 프로토타이핑 & CMF",
+        "description": "해당 단계의 공학적 설계 및 검증 내용이 기술됩니다."
+      }
+    ],
+    "gallery": [
+      {
+        "url": "q",
+        "caption": "작품 대표 렌더링",
+        "type": "render"
+      }
+    ],
+    "links": {
+      "video": "",
+      "github": "",
+      "cad": ""
+    }
+  },
+  {
     "id": "aero-fold",
     "index": "01",
     "title": "AERO-FOLD: 공기역학 기반 휴대용 모듈러 워크벤치",

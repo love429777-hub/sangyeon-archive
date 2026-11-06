@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Mail, MapPin, Award, Layers, Code, Compass, ExternalLink } from 'lucide-react';
+import { X, Mail, MapPin, Award, Compass } from 'lucide-react';
 import profileData from '../data/profile.json';
 
 export default function ProfileModal({ isOpen, onClose }) {
